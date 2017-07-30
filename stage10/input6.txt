@@ -1,0 +1,12 @@
+decl integer a, b[5]; enddecl
+
+integer main()
+{
+begin
+	read(a);
+	while(a<5) do read(b[a]); a=a+1; endwhile;
+	a=0;
+	while(a<5) do write(b[a]); a=a+1; endwhile;
+	return 0;
+end
+}

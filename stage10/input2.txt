@@ -1,0 +1,19 @@
+decl
+integer a,b;
+enddecl
+
+integer main()
+{
+decl
+integer c,d;
+enddecl
+begin
+c=4;
+d=5;
+a=c+d;
+b=d-c;
+write(a);
+write(b);
+return 0;
+end
+}

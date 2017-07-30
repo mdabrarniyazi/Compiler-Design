@@ -1,0 +1,35 @@
+decl
+integer sum(integer a,b,c),p,q;
+enddecl
+
+integer sum(integer a,b,c)
+{
+	decl
+	integer d;
+	enddecl
+
+	begin
+	d=a+b+c;
+	return d;
+	end
+}
+
+integer main()
+{
+	decl
+	integer a,b,c;
+	enddecl
+
+	begin
+	read(a);
+	read(b);
+	read(c);
+	read(p);
+	read(q);
+
+	write(sum(a,b,c));
+	write(sum(a,b,c)+p);
+	return 0;
+	end
+
+}

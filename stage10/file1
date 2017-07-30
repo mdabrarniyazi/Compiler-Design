@@ -1,0 +1,8 @@
+decl
+integer u;
+integer all(integer a);
+enddecl
+
+integer all {
+
+integer main() { }

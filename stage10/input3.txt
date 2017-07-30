@@ -1,0 +1,15 @@
+decl
+integer a[1],b,c,d;
+enddecl
+
+integer main()
+{
+decl
+enddecl
+begin
+read(a[0]);
+read(b);
+write(a[0]+b);
+return 0;
+end
+}

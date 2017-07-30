@@ -1,0 +1,41 @@
+decl
+integer sum(integer a,b,c),p,q;
+integer arr[5];
+integer fact(integer n);
+integer fib(integer n);
+enddecl
+
+
+integer fib(integer n)
+{
+	decl
+	integer c;
+	enddecl
+	begin
+	if(n==1)then
+		c=1;
+	else
+		if(n==2)then
+			c=2;
+		else
+			c=fib(n-1)+fib(n-2);
+		endif;
+	endif;
+	return c;
+	end
+}
+
+
+integer main()
+{
+	decl
+	integer a,b;	
+	integer c;
+	enddecl
+	begin
+		a=0;	
+		write(fib(5));
+	return 0;
+	end
+
+}

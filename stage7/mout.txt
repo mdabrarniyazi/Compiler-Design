@@ -1,0 +1,42 @@
+START
+IN R0
+MOV [25] ,R0
+//--------
+L0:
+MOV R0 [25]
+MOV R1 ,5
+LT R0 ,R1
+JZ R0 L1
+IN R0
+MOV R2 [25]
+MOV R1 ,20
+ADD R1 ,R2
+MOV [R1] ,R0
+MOV R0 [25]
+MOV R1 ,1
+ADD R0 ,R1
+MOV [25] ,R0 
+JMP L0
+//------
+L1:
+MOV R0 ,0
+MOV [25] ,R0 
+//--------
+L2:
+MOV R0 [25]
+MOV R1 ,5
+LT R0 ,R1
+JZ R0 L3
+MOV R1 [25]
+MOV R0 ,20
+ADD R0 ,R1
+MOV R0 ,[R0]
+OUT R0
+MOV R0 [25]
+MOV R1 ,1
+ADD R0 ,R1
+MOV [25] ,R0 
+JMP L2
+//------
+L3:
+HALT
